@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>DojoWeather</h1>
+        <div class="cities">
+            <a onclick="vlere()" href="#">Burbank</a>
+            <a onclick="vlere()" href="#">Chicago</a>
+            <a onclick="vlere()" href="#">Dallas</a>
+        </div>
+    </div>
+    <div class="location">
+        <h2>San Jose</h2>
+        <div class="temp">
+            <p>show temperature in </p>
+            <select name="" id="grade" onchange="handleChange()">
+                <option value="1" selected>&deg;C</option>
+                <option value="2"  >&deg;F</option>
+            </select>
+        </div>
+    </div>
+    <div class="days">
+        <div class="day">
+            <h3>Today</h3>
+                <img src="./assets/some_rain.png" alt="some_rain">
+                <h5>some rain</h5>
+            <div class="deg">
+                <p class="degree">24&deg;</p>
+                <p class="degree">18&deg;</p>
+            </div>
+        </div>
+        <div class="day">
+            <h3>Tomorrow</h3>
+                <img src="./assets/some_sun.png" alt="some_sun">
+                <h5>some sun</h5>
+            <div class="deg">
+                <p class="degree">27&deg;</p>
+                <p class="degree">19&deg;</p>
+            </div>
+        </div>
+        <div class="day">
+            <h3>Friday</h3>
+                <img src="./assets/some_clouds.png" alt="some_clouds">
+                <h5>some clouds</h5>
+            <div class="deg">
+                <p class="degree">21&deg;</p>
+                <p class="degree">16&deg;</p>
+            </div>
+        </div>
+        <div class="day">
+            <h3>Saturday</h3>
+                <img src="./assets/some_sun.png" alt="some_sun">
+                <h5>some sun</h5>
+            <div class="deg">
+                <p class="degree">26&deg;</p>
+                <p class="degree">21&deg;</p>
+            </div>
+        </div>
+    </div>
+    <div class="stop" id="button">
+        <img src="./assets/cookie.png" alt="cookie">
+        <div class="content">
+            <h3>Stop! Cookie time</h3>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button onclick="dissapear('button')">I Accept</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
